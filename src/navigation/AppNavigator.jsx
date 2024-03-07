@@ -2,6 +2,7 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "../screens/HomeScreen";
 import SobreScreen from "../screens/SobreScreen";
+import ProdutosScreen from "../screens/ProdutosScreen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -27,6 +28,14 @@ function TabNavigator() {
         options={{
           title: "Home",
           tabBarIcon: "home",
+        }}
+      />
+      <Tab.Screen
+        name="ProdutosScreen"
+        component={ProdutosScreen}
+        options={{
+          title: "Produtos",
+          tabBarIcon: "cart",
         }}
       />
       <Tab.Screen
