@@ -29,9 +29,12 @@ export default function ProdutosScreen() {
         // a função map retorna um novo array com o resultado da função passada para cada item do array
         produtos.map((produto) => (
           <View key={produto.id}>
+            {/*  exibindo a imagem do produto */}
             <Image
+              // a propriedade source recebe um objeto com a propriedade uri que recebe a URL da imagem
               source={{ uri: produto.images[0] }}
-              style={{ width: 50, height: 50 }}
+              // a propriedade style recebe um objeto com as propriedades width, maxWidth e height
+              style={{ width: "100%", maxWidth: 350, height: 50 }}
             />
             <Text>{produto.title}</Text>
           </View>
