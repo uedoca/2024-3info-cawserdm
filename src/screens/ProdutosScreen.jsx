@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Image, View } from "react-native";
 import { Text } from "react-native-paper";
 import styles from "../config/styles";
-
+ 
 export default function ProdutosScreen() {
   const [produtos, setProdutos] = useState([]);
 
