@@ -5,14 +5,18 @@ import { Text } from "react-native-paper";
 export default function ProdutosScreen() {
   const [produtos, setProdutos] = useState([]);
 
+  // aqui usamos o hook useEffect para ser executado
+  // toda vez que o componente de tela é montado
   useEffect(
     () => {
-      fetchProduts();
+      // assim que temos a tela Produtos vamos buscar os
+      // produtos chamando a função fetchProducts
+      fetchProducts();
     },
     [] // o array vazio indica que a função será executada apenas uma vez, quando o componente for montado
   );
 
-  const fetchProduts = async () => {
+  const fetchProducts = async () => {
     const response = await fetch("https://dummyjson.com/products");
     const data = await response.json();
     console.log(data.products);
