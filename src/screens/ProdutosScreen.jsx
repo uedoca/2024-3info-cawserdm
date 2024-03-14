@@ -7,7 +7,7 @@ export default function ProdutosScreen() {
   const [produtos, setProdutos] = useState([]);
   const [categoria, setCategoria] = useState("");
   const [categorias, setCategorias] = useState([]);
-
+ 
   const pegarCategorias = async () => {
     const categorias = await fetch("https://dummyjson.com/products/categories");
     const retorno = await categorias.json();
