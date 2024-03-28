@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import { View } from "react-native";
 import { Text } from "react-native-paper";
 import styles from "../config/styles";
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b
 /**
  *
  * LOGICA SIMPLES
@@ -15,12 +19,20 @@ import styles from "../config/styles";
  */
 const API = "58f0cf79195fef97df91af42c5973568";
 const URL = `https://api.openweathermap.org/data/2.5/weather?q=Joinville&appid=${API}&units=metric`;
+<<<<<<< HEAD
  
 export default function TempoScreenAula() {
   const [temperatura, setTemperatura] = useState("");
   const [icone, setIcone] = useState("");
   const [cidade, setCidade] = useState("Joinville");
  
+=======
+
+export default function TempoScreenAula() {
+  const [temperatura, setTemperatura] = useState("");
+  const [icone, setIcone] = useState("");
+
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b
   const fetchTempo = async () => {
     // vou lá buscar o JSON na internet
     const resposta = await fetch(URL);
@@ -31,13 +43,21 @@ export default function TempoScreenAula() {
     setTemperatura(data);
     setIcone(data.weather[0].icon);
   };
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b
   useEffect(() => {
     fetchTempo();
   }, []);
   // array vazio no final de useEffect simula simboliza
   // que a função será executada apenas uma vez, quando o componente for montado
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b
   return (
     <View style={styles.container}>
       {icone && (
@@ -67,4 +87,8 @@ export default function TempoScreenAula() {
       <Text>Temperatura Minima: {temperatura?.main?.temp_min}</Text>
     </View>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b

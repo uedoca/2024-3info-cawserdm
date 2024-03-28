@@ -6,7 +6,11 @@ import ProdutosScreen from "../screens/ProdutosScreen";
 import TempoScreen from "../screens/TempoScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import TempoScreenAula from "../screens/TempoScreenAula";
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 4c483b84913c195c6c104f7b21cb6cd63f462d8b
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
  
